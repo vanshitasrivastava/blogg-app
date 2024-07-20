@@ -3,7 +3,7 @@ const cors=require('cors')
 const {connect}=require('mongoose')
 require('dotenv').config()
 const upload=require('express-fileupload')
-
+const PORT=process.env.PORT || 5000
 
 const userRoutes=require('./routes/userRoutes.js')
 const postRoutes=require('./routes/postRoutes.js')
